@@ -1,0 +1,53 @@
+# --- virtualenvs ---
+.venv/
+.venv-f5/
+.venv-seedvc/
+venv/
+
+# --- vendored upstream engines (cloned by setup.sh) ---
+FAC-FACodec/
+Amphion/
+TokAN/
+seed-vc/
+knn-vc/
+
+# --- models & checkpoints ---
+checkpoints/
+stats/
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+*.bin
+models/
+
+# --- runtime state ---
+.workers/
+__pycache__/
+*.pyc
+.DS_Store
+tensorboard/
+
+# --- audio & personal data (record your own; see docs) ---
+samples/*.wav
+samples/*.mp3
+samples/ref_candidates/
+*.wav.bak
+me_profile.wav
+me.wav
+british_irish.wav
+out_*.wav
+/tmp/
+
+# keep tiny reference transcripts (generated text only)
+!samples/ref_texts.json
+
+# --- generated model caches & scratch ---
+wav2vec2_checkpoints/
+tmp_v*/
+*.log
+
+# --- personal recordings & outputs (never commit) ---
+me_*.wav
+*_v1eng.wav
+.venv-xtts/

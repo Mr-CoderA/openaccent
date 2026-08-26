@@ -1,0 +1,21 @@
+Reference audio credits
+=======================
+
+All reference clips are real human recordings.
+
+ref_us.wav  — LJSpeech-1.1 dataset (LJ001-0001), Kathleen, North-American English.
+              License: CC BY 4.0. https://keithito.com/LJ-Speech-Dataset/
+
+ref_pk.wav  — Speaker "urdu22", born Islamabad, Pakistan; native language Urdu.
+ref_in.wav  — Speaker "hindi10", born New Delhi, India; native language Hindi.
+ref_gb.wav  — Speaker "english306", born London, UK; native language English.
+Source for the above three: The Speech Accent Archive, George Mason University
+(https://accent.gmu.edu/). All speakers read the same elicitation paragraph
+("Please call Stella...").
+License: CC BY-NC-SA 4.0 — attribution required, non-commercial use.
+
+Original downloads: https://accent.gmu.edu/audio/{urdu22,hindi10,english306}.mp3
+(converted to 16 kHz mono WAV)
+
+Candidates kept in samples/ref_candidates/ for swapping alternatives:
+urdu1.mp3 (Karachi), hindi1.mp3 (Nagpur), english221.mp3 / english487.mp3 (London).
