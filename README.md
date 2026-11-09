@@ -112,7 +112,7 @@ TL;DR:
 | this repository's code | MIT | ✅ |
 | [FAC-FACodec](https://github.com/claussss/FAC-FACodec), [Amphion](https://github.com/open-mmlab/Amphion), [kNN-VC](https://github.com/bshall/knn-vc) | MIT | ✅ |
 | F5-TTS **weights** | CC-BY-NC 4.0 | ❌ non-commercial |
-| [Seed-VC](https://github.com/Plachta/seed-vc) | GPL-3.0 | ⚠️ copyleft conditions |
+| [Seed-VC](https://github.com/Plachtaa/seed-vc) | GPL-3.0 | ⚠️ copyleft conditions |
 | TokAN | none published | ⚠️ all-rights-reserved |
 | GMU Speech Accent Archive reference clips | CC-BY-NC-SA | ❌ non-commercial |
 
@@ -128,7 +128,7 @@ the license matrix, and better accent references. See
 ## Credits
 
 Built on the shoulders of: [F5-TTS](https://github.com/SWivid/F5-TTS) ·
-[Seed-VC](https://github.com/Plachta/seed-vc) · [TokAN](https://github.com/P1ping/TokAN) ·
+[Seed-VC](https://github.com/Plachtaa/seed-vc) · [TokAN](https://github.com/P1ping/TokAN) ·
 [FAC-FACodec](https://github.com/claussss/FAC-FACodec) · [kNN-VC](https://github.com/bshall/knn-vc) ·
 [Amphion](https://github.com/open-mmlab/Amphion) · [faster-whisper](https://github.com/SYSTRAN/faster-whisper) ·
 [Resemblyzer](https://github.com/resemble-ai/Resemblyzer) · [CommonAccent](https://huggingface.co/Jzuluaga/accent-id-commonaccent_xlsr-en-english) ·
