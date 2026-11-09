@@ -29,7 +29,7 @@ echo "==> [4/5] engine repos"
 [ -d FAC-FACodec ] || git clone --depth 1 https://github.com/claussss/FAC-FACodec.git FAC-FACodec
 [ -d Amphion ]     || git clone --depth 1 https://github.com/open-mmlab/Amphion.git Amphion
 [ -d TokAN ]       || git clone --depth 1 https://github.com/P1ping/TokAN.git TokAN
-[ -d seed-vc ]     || git clone --depth 1 https://github.com/Plachta/seed-vc.git seed-vc
+[ -d seed-vc ]     || git clone --depth 1 https://github.com/Plachtaa/seed-vc.git seed-vc
 [ -d knn-vc ]      || git clone --depth 1 https://github.com/bshall/knn-vc.git knn-vc
 
 echo "==> [4b] F5-TTS environment (.venv-f5, pinned older torch)"
