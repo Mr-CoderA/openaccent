@@ -10,7 +10,6 @@ Runs 100% locally on Apple Silicon. No cloud, no API keys.
 <a href="#quickstart"><img alt="python" src="https://img.shields.io/badge/python-3.11-blue"></a>
 <a href="#license-matrix"><img alt="license" src="https://img.shields.io/badge/code-MIT-green"></a>
 <a href="https://apple.com/mac"><img alt="platform" src="https://img.shields.io/badge/platform-Apple%20Silicon-black?logo=apple"></a>
-<a href="#benchmarks"><img alt="WER" src="https://img.shields.io/badge/content%20WER-as%20low%20as%200.00-success"></a>
 </p>
 
 ---
@@ -21,7 +20,7 @@ Give it any speech audio and a target accent (`pk` / `in` / `us` / `gb`).
 OpenAccent re-speaks your exact words **with the target accent**, while:
 
 - 🧬 **keeping your voice** — cloned from a reusable 60-second voice profile
-- ⏱️ **keeping your timing** — words land when *you* said them (median drift ~100 ms)
+- ⏱️ **keeping your timing** — words land when *you* said them (word-sync drift of 50–240 ms in the author's runs)
 - 🔥 **keeping your emotion** — excitement, emphasis and energy survive the conversion
 - ✅ **self-verifying** — every run prints QA checks (content WER, speaker similarity,
   word-sync drift, expressiveness kept) instead of hoping for the best
@@ -68,18 +67,20 @@ conversion sounds like you:
     --voice-ref me_profile.wav --output out.wav --best-of 3
 ```
 
-## Measured results
+## Author-reported results
 
-All numbers from real runs on an M1 MacBook (details in
-[docs/BENCHMARKS.md](docs/BENCHMARKS.md)):
+These figures come from the author's own runs on an M1 MacBook (details in
+[docs/BENCHMARKS.md](docs/BENCHMARKS.md)). The input/output audio and run logs are not in this
+repository, so they have **not been independently reproduced**. Several runs are best-of-3, so
+they are not averages. Treat them as indicative only.
 
 | metric | value |
 |---|---|
-| Content preservation (round-trip WER) | **as low as 0.00–0.09** |
-| Speaker similarity w/ voice profile | **up to 0.88** |
-| Word-timing sync | median drift **40–140 ms** |
-| Emotion preservation | **~70–84 %** of source expressiveness |
-| Throughput | ~4 min per short clip (warm, M1) |
+| Content preservation (round-trip WER) | 0.04–0.09 |
+| Speaker similarity w/ voice profile | 0.81–0.88 |
+| Word-timing sync | drift 50–240 ms |
+| Emotion preservation | ~69–84 % of source expressiveness |
+| Throughput (~9 s clip, M1) | ~2.5 min single / ~6 min best-of-3 warm; 7–12 min cold start |
 
 ## Achievements
 
